@@ -1,0 +1,55 @@
+:root {
+  --c1: #fafafa;
+  --c2: #f0f0f0;
+  --c3: #e0e0e0;
+  --c4: #b8b8b8;
+  --c5: #a3a3a3;
+  --c6: #8f8f8f;
+  --c7: #7a7a7a;
+  --c8: #666666;
+  --c9: #525252;
+  --c10: #3d3d3d;
+  --c11: #292929;
+  --c12: #141414;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 0;
+  color: var(--c12);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtitle {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+  .subtitle {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
