@@ -54,6 +54,7 @@
 }
 
 .company-text {
+  font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   line-height: 1.4;
   color: var(--c9);
@@ -67,6 +68,7 @@
 }
 
 .company-skills li {
+  font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 4px;

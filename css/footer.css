@@ -12,14 +12,49 @@ footer .container {
   font-size: 1.5rem;
   line-height: 1.33;
   color: #cccccc;
+  position: relative;
+}
+
+.footer-txt::after {
+  content: "";
+  display: block;
+  background: url("../img/dec-footer.svg");
+  width: 9px;
+  height: 234px;
+  position: absolute;
+  right: -15px;
+  top: -80px;
 }
 
 .footer-contact li {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2.25rem;
   line-height: 1.1;
   color: #ffffff;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.footer-contact li::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -32px;
+  top: 10px;
+}
+
+.footer-contact li:first-child::before {
+  background: url("../img/email.svg") no-repeat center center;
+}
+
+.footer-contact li:nth-child(2)::before {
+  background: url("../img/whatsapp.svg") no-repeat center center;
+}
+
+.footer-contact li:last-child::before {
+  background: url("../img/instagram.svg") no-repeat center center;
 }
 
 .footer-contact a {
@@ -40,5 +75,14 @@ footer .container {
 
   .footer-contact li {
     font-size: 1.5rem;
+  }
+
+  .footer-contact li::before {
+    position: static;
+    margin: 10px;
+  }
+
+  .footer-txt::after {
+    display: none;
   }
 }
